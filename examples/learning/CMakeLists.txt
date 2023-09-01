@@ -1,0 +1,5 @@
+add_subdirectory(1_simple_protobuf)
+add_subdirectory(2_libprotobuf_libfuzzer)
+add_subdirectory(3_libprotobuf_libfuzzer_custom_mutator)
+add_subdirectory(4_libprotobuf_aflpp_custom_mutator)
+add_subdirectory(5_libprotobuf_aflpp_custom_mutator_input)

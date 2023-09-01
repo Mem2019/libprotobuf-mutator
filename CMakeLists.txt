@@ -99,6 +99,9 @@ if (LIB_PROTO_MUTATOR_WITH_ASAN)
   endif()
 endif()
 
+# Set PIC to enable linking AFL++ custom mutator shared library
+set(EXTRA_FLAGS "${EXTRA_FLAGS} -fPIC")
+
 # Assume CFLAGS has coverage options if LIB_PROTO_MUTATOR_FUZZER_LIBRARIES was set
 if ("${LIB_PROTO_MUTATOR_FUZZER_LIBRARIES}" STREQUAL "")
   if (LIB_PROTO_MUTATOR_HAS_SANITIZE_FUZZER)

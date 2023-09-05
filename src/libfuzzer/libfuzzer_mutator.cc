@@ -51,9 +51,7 @@
   extern "C" __attribute__((weak)) ReturnType Name(__VA_ARGS__)
 #endif
 
-LIB_PROTO_MUTATOR_WEAK_DEF(size_t, LLVMFuzzerMutate, uint8_t*, size_t, size_t) {
-  return 0;
-}
+extern "C" size_t LLVMFuzzerMutate(uint8_t*, size_t, size_t);
 
 namespace protobuf_mutator {
 namespace libfuzzer {
